@@ -73,6 +73,7 @@
 			<result name="alermDevice">/WEB-INF/page/menu/alermDevice.jsp</result>
 			<result name="logonError">/WEB-INF/page/menu/index.jsp</result>
 			<result name="showMenu" type="json"></result>
+			<result name="error">/index.jsp</result>
 		</action>
 		<!-- 导出设置 -->
 		<action name="elecExportFieldsAction_*" class="elecExportFieldsAction" method="{1}"> 

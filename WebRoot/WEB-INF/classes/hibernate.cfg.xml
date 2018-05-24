@@ -27,5 +27,6 @@
 		<mapping resource="com/ityu/elec/domain/ElecRole.hbm.xml"/>
 		<mapping resource="com/ityu/elec/domain/ElecPopedom.hbm.xml"/>
 		<mapping resource="com/ityu/elec/domain/ElecRolePopedom.hbm.xml"/>
+		<mapping resource="com/ityu/elec/domain/ElecExportFields.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>
