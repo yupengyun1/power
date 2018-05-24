@@ -74,6 +74,10 @@
 			<result name="logonError">/WEB-INF/page/menu/index.jsp</result>
 			<result name="showMenu" type="json"></result>
 		</action>
+		<!-- 导出设置 -->
+		<action name="elecExportFieldsAction_*" class="elecExportFieldsAction" method="{1}"> 
+			<result name="setExportExcel">/WEB-INF/page/system/exportExcel.jsp</result> 
+		</action> 
 		<!-- 数据字典 -->
 		<action name="elecSystemDDLAction_*" class="elecSystemDDLAction" method="{1}">
 			<result name="home">/WEB-INF/page/system/dictionaryIndex.jsp</result>
