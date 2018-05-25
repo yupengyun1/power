@@ -31,5 +31,6 @@ public interface IElecUserService {
 	void saveUserList(List<ElecUser> userList);
 
 	List<Object[]> chartUser(String zName, String eName);
+	
 
 }

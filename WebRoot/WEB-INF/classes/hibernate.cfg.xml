@@ -28,5 +28,8 @@
 		<mapping resource="com/ityu/elec/domain/ElecPopedom.hbm.xml"/>
 		<mapping resource="com/ityu/elec/domain/ElecRolePopedom.hbm.xml"/>
 		<mapping resource="com/ityu/elec/domain/ElecExportFields.hbm.xml"/>
+		<mapping resource="com/ityu/elec/domain/ElecApplication.hbm.xml"/>
+		<mapping resource="com/ityu/elec/domain/ElecApplicationTemplate.hbm.xml"/>
+		<mapping resource="com/ityu/elec/domain/ElecApproveInfo.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

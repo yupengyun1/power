@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ityu.elec.domain.ElecApplication" table="Elec_Application">
+		<id name="applicationID" type="integer" column="applicationID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="title" type="string" column="title"></property>
+		<property name="path" type="string" column="path"></property>
+		<property name="applyTime" type="timestamp" column="applyTime"></property>
+		<property name="status" type="string" column="status"></property>
+		<property name="processInstanceID" type="string" column="processInstanceID"></property>
+		<!-- 映射申请模板的多对一的关系 -->
+		<many-to-one name="elecApplicationTemplate" class="com.ityu.elec.domain.ElecApplicationTemplate">
+			<column name="applicationTemplateID"></column>
+		</many-to-one>
+		
+		<!-- 映射用户的多对一的关系-->
+		<many-to-one name="elecUser" class="com.ityu.elec.domain.ElecUser">
+			<column name="applicationUserID"></column>
+		</many-to-one>
+		
+		<!-- 映射一对多的关联关系，与审核信息表 -->
+		<set name="elecApproveInfos" table="Elec_ApproveInfo" inverse="true" cascade="delete">
+			<key>
+				<column name="applicationID"></column>
+			</key>
+			<one-to-many class="com.ityu.elec.domain.ElecApproveInfo"/>
+		</set>
+	</class>
+</hibernate-mapping>

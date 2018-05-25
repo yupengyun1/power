@@ -87,5 +87,16 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/woden-api-1.0M9.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/wsdl4j-1.6.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/wstx-asl-3.2.9.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-bpmn.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-console-form-plugin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-console-graphView-plugin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-console-integration.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-console-reports.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-db.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-examples-tests.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-jboss.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-test-db-tests.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm-tomcat6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jbpm.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
